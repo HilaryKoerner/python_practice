@@ -12,3 +12,12 @@ expert_status = True
 #print statements with the variables
 print("Hilary is a new" + job)
 
+#adding str converts a number into a string
+print("Hilary has been coding for " + str(years) + " years")
+
+#adding str converts a boolean into a string
+print("Expert Status: " + str(expert_status))
+
+#the same print statements as above, but with F-String
+
+print(f"Expert Status: {expert_status}")
