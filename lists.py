@@ -14,3 +14,21 @@ print(my_list.index("Matt"))
 my_list[3] = 85
 print(my_list)
 
+# return the length of the list
+print(f"There are {len(my_list)} objects in the list" )
+
+# remove an object from the list
+my_list.remove("Matt")
+print(my_list)
+
+# .pop method removes an object at the index specified
+
+my_list.pop(0)
+print(my_list)
+
+# creates a tuple. A tuple is a sequence of immutable python objects that cannot be changed
+
+my_tuple = ("Python", 100, "VBA", False)
+print(my_tuple)
+
+
