@@ -1,5 +1,4 @@
-#initial variable
-
+#initial variable to start the while loop
 user_play = "y"
 
 while user_play == "y":
