@@ -1,17 +1,17 @@
 import os
 import csv
 
-user_movie = print(input("What movie are you looking for?"))
+video = input("What movie are you looking for?")
 
 csvpath = os.path.join(".", 'Resources', 'netflix_ratings.csv')
 
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
-    #print(csvreader)
-
-    
-
-    print(user_movie)
-
+    for row in csvreader:
+        if row[0] == video:
+            print(row[0] + "is rated " + row[1] + "with a viewer rating of " + row[5])
+        elif row[0] != video:
+            print("We do not have that video")
+            break
     
